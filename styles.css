@@ -1,0 +1,393 @@
+/* Standalone base layout. No framework, build step, or remote stylesheet required. */
+* {
+  box-sizing: border-box;
+}
+html {
+  color-scheme: light;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+h1,
+h2,
+h3,
+p,
+figure {
+  margin-top: 0;
+}
+p {
+  margin-bottom: 16px;
+}
+a {
+  color: #4f6570;
+  text-decoration: none;
+}
+a:hover {
+  color: #354951;
+}
+strong {
+  font-weight: 700;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mt-5 {
+  margin-top: 48px !important;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+#navbar > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+.navbar-brand {
+  display: block;
+  margin-right: 16px;
+  padding: 5px 0;
+  white-space: nowrap;
+}
+.navbar-collapse {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.navbar-nav {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 0 0 auto;
+  padding: 0;
+  list-style: none;
+}
+.nav-link {
+  display: block;
+}
+.navbar-toggler {
+  display: none;
+  padding: 4px 12px;
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: #000;
+  font-family: inherit;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.icon-bar {
+  border-radius: 1px;
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin: 4px 0;
+  background: currentColor;
+}
+.icon-bar:first-child {
+  margin-top: 0;
+}
+.icon-bar:last-child {
+  margin-bottom: 0;
+}
+footer {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14.4px;
+  line-height: 1.5;
+}
+footer .container {
+  padding: 0 15px;
+  color: #171717;
+}
+@media (max-width: 575px) {
+  .navbar-collapse {
+    flex-basis: 100%;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .js .navbar-toggler {
+    display: block;
+  }
+  .js .navbar-collapse {
+    display: none;
+  }
+  .js .navbar-collapse.is-open {
+    display: flex;
+  }
+}
+
+/* Personal page styles, preserved from the approved design. */
+:root {
+  --global-theme-color: #4f6570;
+  --global-hover-color: #354951;
+  --global-text-color: #171717;
+}
+
+body {
+  background: #fff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+#navbar {
+  position: relative;
+  border: 0;
+  box-shadow: none;
+  background: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+}
+#navbar .container {
+  max-width: none;
+  padding: 0 24px;
+}
+#navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: 400;
+  color: #333;
+}
+#navbar .nav-link {
+  padding: 10px 14px;
+  font-size: 22px;
+  font-weight: 400;
+  color: #555;
+}
+#navbar .nav-item.active > .nav-link {
+  background: transparent;
+  color: #222;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #4f6570;
+  outline-offset: 4px;
+}
+
+body > .container[role="main"] {
+  width: calc(100% - 80px);
+  padding: 0;
+}
+
+.post h1,
+.post h2,
+.post h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.post:has(.profile) .post-header {
+  margin: 0;
+  padding: 22px 0 105px;
+  text-align: center;
+}
+.post:has(.profile) .post-title {
+  margin: 0 0 22px;
+  color: #394b53;
+  font-size: clamp(40px, 4.3vw, 62px);
+  line-height: 1.15;
+  font-weight: 400;
+}
+.post:has(.profile) .desc {
+  margin: 0;
+  color: #262626;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(20px, 2vw, 26px);
+  font-style: italic;
+  line-height: 1.45;
+}
+.post:has(.profile) article {
+  display: grid;
+  grid-template-columns: minmax(260px, 33%) minmax(0, 1fr);
+  align-items: start;
+  gap: 40px;
+}
+.post:has(.profile) .profile {
+  width: 100%;
+  float: none;
+  margin: 0;
+}
+.post:has(.profile) .profile figure {
+  margin: 0;
+}
+.post:has(.profile) .profile img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 0.94;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: none;
+}
+.post:has(.profile) .clearfix {
+  padding-top: 22px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.post:has(.profile) .clearfix p {
+  margin: 0 0 24px;
+}
+.post:has(.profile) .clearfix a {
+  color: #4f6570;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  overflow-wrap: anywhere;
+}
+
+footer.sticky-bottom {
+  margin-top: 90px;
+  border-top: 0;
+  color: #6b6b6b;
+}
+
+@media (max-width: 767px) {
+  body > .container[role="main"] {
+    width: calc(100% - 40px);
+    margin-top: 24px !important;
+  }
+  #navbar .container {
+    padding: 0 20px;
+  }
+  #navbar .nav-link {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .post:has(.profile) .post-header {
+    padding: 20px 0 42px;
+  }
+  .post:has(.profile) article {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .post:has(.profile) .profile {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+  .post:has(.profile) .clearfix {
+    padding-top: 0;
+    font-size: 17px;
+  }
+  footer.sticky-bottom {
+    margin-top: 48px;
+  }
+}
+.post:has(.research-content, .teaching-content) .post-header {
+  padding: 22px 0 90px;
+  margin: 0;
+  text-align: center;
+}
+.post:has(.research-content, .teaching-content) .post-title {
+  margin: 0;
+  color: #394b53;
+  font-size: clamp(44px, 5vw, 72px);
+  line-height: 1.2;
+}
+.post:has(.research-content, .teaching-content) .post-description:empty {
+  display: none;
+}
+
+.research-content {
+  font-size: 18px;
+  line-height: 1.7;
+}
+.research-content h2 {
+  margin: 64px 0 28px;
+  color: #394b53;
+  font-size: 34px;
+  line-height: 1.3;
+}
+.research-content h2:first-child {
+  margin-top: 0;
+}
+.research-content h3 {
+  margin: 38px 0 18px;
+  font-size: 26px;
+  font-style: italic;
+  line-height: 1.4;
+}
+.research-content h2 + h3 {
+  margin-top: 0;
+}
+.research-content p {
+  margin: 0 0 20px;
+}
+.research-content .paper-authors,
+.research-content .abstract-label {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+}
+.research-content a {
+  color: #4f6570;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 767px) {
+  .post:has(.research-content, .teaching-content) .post-header {
+    padding: 20px 0 48px;
+  }
+  .research-content {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  .research-content h2 {
+    margin-top: 44px;
+    font-size: 28px;
+  }
+  .research-content h3 {
+    font-size: 23px;
+  }
+  .research-content .paper-authors,
+  .research-content .abstract-label {
+    font-size: 18px;
+  }
+}
+.teaching-content {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.teaching-content .teaching-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 24px;
+  margin: 0 0 24px;
+}
+.teaching-content .teaching-term {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+  .teaching-content {
+    font-size: 17px;
+  }
+  .teaching-content .teaching-entry {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Keep the original site's 48px top spacing at every breakpoint. */
+body > .container[role="main"] {
+  margin-top: 48px !important;
+}
