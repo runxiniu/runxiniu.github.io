@@ -7,6 +7,7 @@
     <meta name="description" content="Runxi Niu — Ph.D. Candidate in Economics at NHH Norwegian School of Economics. Research and teaching." />
     <title>Runxi Niu</title>
     <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/merged.css" />
     <script src="./assets/site.js" defer></script>
   </head>
   <body>
@@ -21,8 +22,7 @@
           </button>
           <div class="navbar-collapse" id="navigation">
             <ul class="navbar-nav">
-              <li class="nav-item active"><a class="nav-link" href="./" aria-current="page">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="./research/">Research</a></li>
+              <li class="nav-item active"><a class="nav-link" href="#about" aria-current="location">About</a></li>
               <li class="nav-item"><a class="nav-link" href="./teaching/">Teaching</a></li>
             </ul>
           </div>
@@ -30,11 +30,11 @@
       </nav>
     </header>
     <main class="container mt-5" role="main">
-      <div class="post">
+      <div class="post about-section" id="about">
         <header class="post-header"><h1 class="post-title">Runxi Niu</h1></header>
         <article>
           <div class="profile">
-            <figure><img src="./assets/portrait-placeholder.svg" alt="Profile photo placeholder" width="480" height="560" /></figure>
+            <div class="portrait-space" aria-hidden="true"></div>
           </div>
           <div class="clearfix">
             <p>
@@ -48,6 +48,66 @@
           </div>
         </article>
       </div>
+      <section class="post research-section" id="research" aria-labelledby="research-title">
+        <h2 class="section-title" id="research-title">Research</h2>
+        <div class="research-content">
+            <h3 id="job-market-paper">Job Market Paper</h3>
+            <h4 id="credit-assessments-risk-allocation-and-financial-vulnerability">
+              Credit Assessments, Risk Allocation, and Financial Vulnerability
+            </h4>
+            <details class="paper-abstract">
+              <summary>Abstract</summary>
+              <p>
+                This paper studies how credit assessments shape firms’ financial vulnerability before
+                downturns. Using Norwegian firm data, I find that financial information predicts bankruptcy within agency rating groups. Better ratings
+                are linked to lower borrowing costs among firms with similar measured risk. I build a model in which lenders’ assessments change loan
+                prices and firms’ financing decisions. Assessment-based pricing raises credit by 0.9%, but increases losses from a later 5% fall in
+                aggregate productivity by 4.5%, when both economies face the same loan pricing and aggregate prices. About two-thirds of the gap comes
+                from changes in credit allocation across risk groups. The extra risk remains after the rating advantage fades but adds little to the
+                fall in total investment. In general equilibrium, differences in real activity are larger after bank-capital shocks than productivity
+                shocks, partly because of loan pricing during the shock.
+              </p>
+            </details>
+            <h3 id="working-papers">Working Papers</h3>
+            <h4 id="how-environmental-policy-affects-agriculture-evidence-from-chinas-sulfur-dioxide-control-zone-policy">
+              How Environmental Policy Affects Agriculture: Evidence from China’s Sulfur Dioxide Control Zone Policy
+            </h4>
+            <p class="paper-authors">with Zichen Deng</p>
+            <details class="paper-abstract">
+              <summary>Abstract</summary>
+              <p>
+                We develop a new approach to evaluating environmental policies in settings where pollution
+                spills across administrative boundaries. Our approach integrates atmospheric particle-trajectory data with natural-experiment designs to
+                construct a measure of policy exposure at affected locations, regardless of whether they lie inside or outside regulated jurisdictions.
+                This addresses a key limitation of conventional jurisdiction-based designs, which may misclassify treated locations when pollution
+                travels across borders. Applying the method to China’s Two Control Zones policy, we show that conventional estimates become increasingly
+                attenuated when cross-boundary spillovers are important, while our approach better captures the policy effect. When spillovers are
+                limited, the two approaches perform similarly.
+              </p>
+            </details>
+            <p class="paper-links">
+              <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7481960" rel="external nofollow noopener" target="_blank"
+                >View paper on SSRN</a
+              >
+            </p>
+            <h4 id="what-text-helps-forecast-inflation-evidence-from-retrieval-augmented-language-models">
+              What Text Helps Forecast Inflation? Evidence from Retrieval-Augmented Language Models
+            </h4>
+            <p class="paper-authors">with Yuan Lin</p>
+            <details class="paper-abstract">
+              <summary>Abstract</summary>
+              <p>
+                We study which texts help forecast U.S. CPI inflation at horizons of one to twelve months. Our retrieval-augmented generation (RAG)
+                system combines historical CPI data with passages from central bank communications and financial news. In an out-of-sample
+                evaluation, the best RAG configuration outperforms conventional econometric benchmarks, with larger gains at longer horizons.
+                Central bank communications help more at short horizons, while news contributes more at longer horizons. Text also improves density
+                forecast calibration, bringing prediction interval coverage closer to its nominal level. Demand and energy text help forecasts,
+                while monetary policy content is consistently associated with worse accuracy.
+              </p>
+            </details>
+            <h3 id="work-in-progress">Work in Progress</h3>
+          </div>
+      </section>
     </main>
     <footer class="sticky-bottom mt-5">
       <div class="container">© Copyright 2026 Runxi Niu.</div>

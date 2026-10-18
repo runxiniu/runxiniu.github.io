@@ -18,3 +18,9 @@ document.addEventListener("keydown", (event) => {
   }
 });
 window.matchMedia("(min-width: 576px)").addEventListener("change", () => setMenuOpen(false));
+
+// Close the mobile menu after choosing a same-page section.
+navigation.addEventListener("click", (event) => {
+  if (event.target.closest("a")) setMenuOpen(false);
+});
+

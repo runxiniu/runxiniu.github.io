@@ -1,0 +1,100 @@
+/* Local comparison only: a compact introduction followed by the full research list. */
+#about,
+#research {
+  scroll-margin-top: 28px;
+}
+.post.about-section .post-header {
+  padding: 10px 0 48px;
+}
+.post.about-section article {
+  grid-template-columns: minmax(220px, 28%) minmax(0, 1fr);
+  gap: 48px;
+}
+.post.about-section .clearfix {
+  padding-top: 8px;
+}
+.portrait-space {
+  width: 100%;
+  aspect-ratio: 0.94;
+}
+.research-section {
+  margin-top: 72px;
+  padding-top: 40px;
+  border-top: 1px solid #e3e5e5;
+}
+.research-section .section-title {
+  margin: 0 0 36px;
+  color: #394b53;
+  font-size: 40px;
+  line-height: 1.2;
+}
+.research-section .research-content h3 {
+  margin: 52px 0 24px;
+  color: #394b53;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 1.3;
+}
+.research-section .research-content h3:first-child {
+  margin-top: 0;
+}
+.research-section .research-content h4 {
+  margin: 38px 0 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 26px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.4;
+}
+.research-section .research-content h3 + h4 {
+  margin-top: 0;
+}
+.paper-abstract {
+  margin-bottom: 20px;
+}
+.paper-abstract summary {
+  width: fit-content;
+  color: #4f6570;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+.paper-abstract summary:hover {
+  color: #354951;
+}
+.paper-abstract[open] summary {
+  margin-bottom: 14px;
+}
+.research-content .paper-abstract p {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .paper-abstract summary {
+    font-size: 18px;
+  }
+  .post.about-section .post-header {
+    padding: 10px 0 32px;
+  }
+  .post.about-section article {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .post.about-section .clearfix {
+    padding-top: 0;
+  }
+  .research-section {
+    margin-top: 44px;
+    padding-top: 30px;
+  }
+  .research-section .section-title {
+    font-size: 34px;
+    margin-bottom: 28px;
+  }
+  .research-section .research-content h3 {
+    font-size: 27px;
+    margin-top: 40px;
+  }
+  .research-section .research-content h4 {
+    font-size: 23px;
+  }
+}
