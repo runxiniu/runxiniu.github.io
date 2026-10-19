@@ -362,7 +362,7 @@ footer.sticky-bottom {
 }
 .teaching-content {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 1.6;
 }
 .teaching-content .teaching-entry {
@@ -379,7 +379,7 @@ footer.sticky-bottom {
 
 @media (max-width: 767px) {
   .teaching-content {
-    font-size: 17px;
+    font-size: 15px;
   }
   .teaching-content .teaching-entry {
     flex-direction: column;
