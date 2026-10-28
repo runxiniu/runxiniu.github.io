@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -eu
 cd "$(dirname "$0")"
-exec python3 -m http.server "${1:-4002}" --bind 127.0.0.1
+exec python3 -m http.server "${1:-4003}" --bind 127.0.0.1
