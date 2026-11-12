@@ -14,7 +14,7 @@ section { scroll-margin-top: 28px; }
 .about { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 36px; align-items: start; margin-bottom: 72px; }
 .portrait-space { width: 220px; max-width: 100%; aspect-ratio: 1; justify-self: center; border-radius: 12px; overflow: hidden; }
 .portrait-space img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.bio { text-align: left; padding: 0; }
+.bio { max-width: 600px; text-align: left; padding: 0; }
 .bio h1 { font-size: 38px; line-height: 1.2; font-weight: 700; margin: 0 0 24px; }
 .bio p { font-size: 18px; line-height: 1.6; font-weight: 400; margin: 0 0 22px; }
 .bio p:last-child { margin-bottom: 0; }
@@ -25,9 +25,13 @@ h2 { font-size: 27px; line-height: 1.3; font-weight: 400; margin: 0 0 24px; colo
 .paper h3 a { color: inherit; }
 .paper-title { text-decoration: underline; text-underline-offset: 3px; }
 .paper h3 a:hover { color: #24718b; }
-.paper-meta { font-size: 15px; font-weight: 400; }
+.paper-meta { font-size: 14px; font-weight: 400; }
 .paper p { max-width: 75%; margin: 0; }
 .paper .paper-status { margin: -8px 0 18px; color: #555; font-size: 15px; }
+.paper-abstract summary { width: fit-content; color: #24718b; cursor: pointer; }
+.paper-abstract summary:hover { color: #164f63; }
+.paper-abstract summary:focus-visible { outline: 2px solid #24718b; outline-offset: 4px; }
+.paper-abstract[open] summary { margin-bottom: 12px; }
 #work-in-progress, #teaching { margin-top: 64px; }
 .teaching-list { list-style-type: square; padding-left: 22px; margin: 0; }
 .teaching-list li { margin-bottom: 12px; }
